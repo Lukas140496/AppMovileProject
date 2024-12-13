@@ -1,20 +1,89 @@
 <ion-tabs>
+  <!-- Página principal de reservas -->
+  <ion-tab tab="tab1">
+    <ion-header>
+      <ion-toolbar>
+        <!-- Barra de búsqueda -->
+        <ion-searchbar placeholder="¿A dónde quieres ir?" show-cancel-button="focus"></ion-searchbar>
+        <ion-buttons slot="end">
+          <!-- Botón de filtros -->
+          <ion-button>
+            <ion-icon name="list-circle-outline"></ion-icon>
+          </ion-button>
+        </ion-buttons>
+      </ion-toolbar>
+    </ion-header>
 
+    <ion-content>
+      <!-- Sub-menú con categorías -->
+      <ion-segment scrollable>
+        <ion-segment-button>
+          <ion-icon aria-hidden="true" name="image-outline"></ion-icon>
+          <ion-label>Vistas increíbles</ion-label>
+        </ion-segment-button>
+        <ion-segment-button>
+          <ion-icon aria-hidden="true" name="star-outline"></ion-icon>
+          <ion-label>Icónicos</ion-label>
+        </ion-segment-button>
+        <ion-segment-button>
+          <ion-icon aria-hidden="true" name="boat-outline"></ion-icon>
+          <ion-label>Frente al lago</ion-label>
+        </ion-segment-button>
+        <ion-segment-button>
+          <ion-icon aria-hidden="true" name="home-outline"></ion-icon>
+          <ion-label>Casas rurales</ion-label>
+        </ion-segment-button>
+        <ion-segment-button>
+          <ion-icon aria-hidden="true" name="sunny-outline"></ion-icon>
+          <ion-label>Tropical</ion-label>
+        </ion-segment-button>
+        <ion-segment-button>
+          <ion-icon aria-hidden="true" name="tablet-landscape-outline"></ion-icon>
+          <ion-label>Contenedores</ion-label>
+        </ion-segment-button>
+        <ion-segment-button>
+          <ion-icon aria-hidden="true" name="bed-outline"></ion-icon>
+          <ion-label>Cabañas</ion-label>
+        </ion-segment-button>
+      </ion-segment>
+
+      <!-- Lista de propiedades -->
+      <div class="properties-container">
+        <ion-card>
+          <img src="ruta-a-la-imagen.jpg" alt="Vista increíble" />
+          <ion-card-header>
+            <ion-card-title>Paine, Chile</ion-card-title>
+            <ion-card-subtitle>A 52 kilómetros de distancia</ion-card-subtitle>
+          </ion-card-header>
+          <ion-card-content>
+            $103,099 CLP noche
+          </ion-card-content>
+        </ion-card>
+      </div>
+
+      <!-- Botón de mapa -->
+      <ion-button class="map-button" color="dark">
+        Mapa
+        <ion-icon name="map" style="margin-left: 10px;"></ion-icon>
+      </ion-button>
+    </ion-content>
+  </ion-tab>
+
+  <!-- Tabs de navegación inferior -->
   <ion-tab-bar slot="bottom">
     <ion-tab-button tab="tab1" href="/tabs/tab1">
-      <ion-icon aria-hidden="true" name="triangle"></ion-icon>
-      <ion-label>Tab 1</ion-label>
+      <ion-icon aria-hidden="true" name="search-outline"></ion-icon>
+      <ion-label>Buscar</ion-label>
     </ion-tab-button>
 
     <ion-tab-button tab="tab2" href="/tabs/tab2">
-      <ion-icon aria-hidden="true" name="ellipse"></ion-icon>
-      <ion-label>Tab 2</ion-label>
+      <ion-icon aria-hidden="true" name="heart-outline"></ion-icon>
+      <ion-label>Favoritos</ion-label>
     </ion-tab-button>
 
     <ion-tab-button tab="tab3" href="/tabs/tab3">
-      <ion-icon aria-hidden="true" name="square"></ion-icon>
-      <ion-label>Tab 3</ion-label>
+      <ion-icon aria-hidden="true" name="chatbubble-outline"></ion-icon>
+      <ion-label>Mensajes</ion-label>
     </ion-tab-button>
   </ion-tab-bar>
-
 </ion-tabs>
