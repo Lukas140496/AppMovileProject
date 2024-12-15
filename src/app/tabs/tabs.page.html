@@ -8,7 +8,7 @@
         <ion-buttons slot="end">
           <!-- Botón de filtros -->
           <ion-button>
-            <ion-icon name="list-circle-outline"></ion-icon>
+            <ion-icon name="list-circle-outline" style="font-size: 29px;"></ion-icon>
           </ion-button>
         </ion-buttons>
       </ion-toolbar>
@@ -49,14 +49,14 @@
 
       <!-- Lista de propiedades -->
       <div class="properties-container">
-        <ion-card>
-          <img src="ruta-a-la-imagen.jpg" alt="Vista increíble" />
+        <ion-card *ngFor="let alojamiento of alojamientos">
+          <img [src]="alojamiento.imagen" alt="Vista increíble" />
           <ion-card-header>
-            <ion-card-title>Paine, Chile</ion-card-title>
-            <ion-card-subtitle>A 52 kilómetros de distancia</ion-card-subtitle>
+            <ion-card-title>{{ alojamiento.titulo }}</ion-card-title>
+            <ion-card-subtitle>{{ alojamiento.distancia }}</ion-card-subtitle>
           </ion-card-header>
           <ion-card-content>
-            $103,099 CLP noche
+            {{ alojamiento.precio }}
           </ion-card-content>
         </ion-card>
       </div>
