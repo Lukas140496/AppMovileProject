@@ -1,0 +1,22 @@
+{
+    "alojamientos": [
+      {
+        "titulo": "Torres del Paine, Chile",
+        "distancia": "A 52 kilómetros de distancia",
+        "precio": "$103,099 CLP noche",
+        "imagen": "../assets/images/torres-del-paine.png"
+      },
+      {
+        "titulo": "Valparaíso, Chile",
+        "distancia": "A 120 kilómetros de distancia",
+        "precio": "$80,500 CLP noche",
+        "imagen": "../assets/images/valparaiso-chile.jpg"
+      },
+      {
+        "titulo": "Santiago, Chile",
+        "distancia": "A 20 kilómetros de distancia",
+        "precio": "$75,000 CLP noche",
+        "imagen": "../assets/images/santiago-de-chile.jpg"
+      }
+    ]
+  }
