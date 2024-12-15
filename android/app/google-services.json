@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "720800982664",
+    "project_id": "appmovileproject",
+    "storage_bucket": "appmovileproject.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:720800982664:android:37cbaceb20342605fc213d",
+        "android_client_info": {
+          "package_name": "com.lukas.appdelukas"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "720800982664-3h4sand0oh0dgp2sk1eru7782m0tnv1n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBRyAgzzvrK9qn2afJlgVVsWWHM6gUEtXM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "720800982664-3h4sand0oh0dgp2sk1eru7782m0tnv1n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
